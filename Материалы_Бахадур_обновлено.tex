@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[russian,english]{babel}
+\babelfont{rm}{DejaVu Serif}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.28em}
+\begin{document}
+\begin{center}
+{\Large\bfseries Анализ бахадуровской эффективности критериев согласия}\par
+\vspace{0.3cm}
+{\large Материалы и обзор литературы}\par
+\end{center}
+\vspace{0.25cm}
+\par\noindent\textbf{1. Bahadur R. R. Stochastic comparison of tests}\par
+The Annals of Mathematical Statistics, 1960, vol. 31, no. 2, pp. 276–295. DOI: 10.1214/aoms/1177705894.\par
+\noindent\textbf{Ссылка.} \url{https://doi.org/10.1214/aoms/1177705894}\par
+\noindent\textbf{Обзор.} Работа посвящена общему подходу к стохастическому сравнению статистических критериев. Рассматриваются принципы асимптотического сопоставления процедур проверки гипотез, в том числе на основе поведения достигаемого уровня значимости.\par
+Этот источник необходим для понимания исходных идей метода Бахадура и обоснования выбранного подхода к сравнению критериев согласия. На него можно опираться при изложении теоретических основ курсовой работы.\par
+\par\noindent\textbf{2. Nikitin Ya. Yu. Asymptotic Efficiency of Nonparametric Tests}\par
+Cambridge University Press, 1995. ISBN 0-521-47029-3.\par
+\noindent\textbf{Ссылка.} \url{https://search.worldcat.org/search?q=isbn%3A0521470293}\par
+\noindent\textbf{Обзор.} В монографии систематически рассматриваются подходы к асимптотической эффективности непараметрических критериев, включая точный и локальный наклоны по Бахадуру, большие уклонения и эффективность критериев согласия.\par
+Монография станет основной теоретической базой для изучения условий применимости используемых формул. Она поможет корректно определить характеристики статистик, которые нужно оценивать численно.\par
+\par\noindent\textbf{3. Milošević B., Nikitin Ya. Yu., Obradović M. Bahadur efficiency of EDF based normality tests when parameters are estimated}\par
+arXiv:2106.07437, 2021.\par
+\noindent\textbf{Ссылка.} \url{https://arxiv.org/abs/2106.07437}\par
+\noindent\textbf{Обзор.} Исследуется бахадуровская эффективность критериев нормальности на основе эмпирической функции распределения при оценивании параметров. Для анализа используются приближённые наклоны, основанные на хвостовой асимптотике предельного распределения статистики и её поведении при альтернативе.\par
+Это главный методологический источник для разрабатываемого алгоритма. В pysatl-experiment планируется численно оценивать коэффициент хвостовой асимптотики по результатам моделирования при нулевой гипотезе и предельное значение статистики по выборкам из альтернативных распределений.\par
+\par\noindent\textbf{4. Obradović M. On asymptotic efficiency of goodness of fit tests for Pareto distribution based on characterizations}\par
+Filomat, 2015, vol. 29, no. 10, pp. 2311–2324.\par
+\noindent\textbf{Ссылка.} \url{https://www.pmf.ni.ac.rs/filomat/}\par
+\noindent\textbf{Обзор.} В статье исследуются критерии согласия с распределением Парето, построенные на характеризациях распределения. Рассматривается их бахадуровская эффективность при различных альтернативах, что позволяет сравнивать эффективность конкретных критериев.\par
+Мне нужны примеры аналитически рассчитанных эффективностей для проверки численного метода. Кроме того, работа может служить образцом для представления результатов в виде таблицы «критерий — альтернатива — эффективность».\par
+\par\noindent\textbf{5. Durio A., Nikitin Ya. Yu. Local Bahadur efficiency of some goodness-of-fit tests under skew alternatives}\par
+Journal of Statistical Planning and Inference, 2003, vol. 115, no. 2, pp. 171–179. DOI: 10.1016/S0378-3758(02)00155-6.\par
+\noindent\textbf{Ссылка.} \url{https://doi.org/10.1016/S0378-3758(02)00155-6}\par
+\noindent\textbf{Обзор.} Статья посвящена локальной бахадуровской эффективности некоторых критериев согласия при асимметричных альтернативах. Исследуется поведение критериев вблизи нулевой гипотезы.\par
+Материал поможет подобрать альтернативные распределения для вычислительных экспериментов и сопоставить численные оценки с аналитическими результатами в локальном режиме. Это важно для исследования точности и сходимости метода.\par
+\end{document}
